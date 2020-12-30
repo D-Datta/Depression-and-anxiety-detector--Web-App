@@ -2,37 +2,48 @@
 let questions = [
   {
     id: 1,
-    question: "What is the full form of RAM ?",
-    answer: "Random Access Memory",
+    question: "How often have you been bothered by feeling down, depressed, irritable, or hopeless over the last two weeks?",
+    answer: "Not at all",
     options: [
-      "Random Access Memory",
-      "Randomely Access Memory",
-      "Run Aceapt Memory",
-      "None of these"
+      "Not at all",
+      "Several days",
+      "More than half of the days",
+      "Nearly every day"
     ]
   },
   {
     id: 2,
-    question: "What is the full form of CPU?",
-    answer: "Central Processing Unit",
+    question: "How often have you been bothered that you have little interest or pleasure in doing things over the last two weeks?",
+    answer: "Not at all",
     options: [
-      "Central Program Unit",
-      "Central Processing Unit",
-      "Central Preload Unit",
-      "None of these"
+      "Not at all",
+      "Several days",
+      "More than half of the days",
+      "Nearly every day"
     ]
   },
   {
     id: 3,
-    question: "What is the full form of E-mail",
-    answer: "Electronic Mail",
+    question: "How often have you been bothered by trouble falling asleep, staying asleep, or sleeping too much over the last two weeks?",
+    answer: "Not at all",
     options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
+      "Not at all",
+      "Several days",
+      "More than half of the days",
+      "Nearly every day"
     ]
-  }
+  },
+  {
+    id: 4,
+    question: "How often have you been bothered that you have poor appetite, weight loss, or overeating over the last two weeks?",
+    answer: "Not at all",
+    options: [
+      "Not at all",
+      "Several days",
+      "More than half of the days",
+      "Nearly every day"
+    ]
+  },
 ];
 
 let question_count = 0;
@@ -57,6 +68,10 @@ function next() {
   let user_answer = document.querySelector("li.option.active").innerHTML;
   // check if the answer is right or wrong
   if (user_answer == questions[question_count].answer) {
+    points += 0;
+    sessionStorage.setItem("points", points);
+  }
+  else {
     points += 10;
     sessionStorage.setItem("points", points);
   }
