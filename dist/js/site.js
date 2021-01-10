@@ -3,7 +3,10 @@ let questions = [
   {
     id: 1,
     question: "How often have you been bothered by feeling down, depressed, irritable, or hopeless over the last two weeks?",
-    answer: "Not at all",
+    pointLow: "Not at all",
+    pointMid:"More than half of the days",
+    pointHigh:"Several days",
+    pointVeryHigh:"Nearly every day",
     options: [
       "Not at all",
       "Several days",
@@ -14,7 +17,10 @@ let questions = [
   {
     id: 2,
     question: "How often have you been bothered that you have little interest or pleasure in doing things over the last two weeks?",
-    answer: "Not at all",
+    pointLow: "Not at all",
+    pointMid:"More than half of the days",
+    pointHigh:"Several days",
+    pointVeryHigh:"Nearly every day",
     options: [
       "Not at all",
       "Several days",
@@ -25,7 +31,10 @@ let questions = [
   {
     id: 3,
     question: "How often have you been bothered by trouble falling asleep, staying asleep, or sleeping too much over the last two weeks?",
-    answer: "Not at all",
+    pointLow: "Not at all",
+    pointMid:"More than half of the days",
+    pointHigh:"Several days",
+    pointVeryHigh:"Nearly every day",
     options: [
       "Not at all",
       "Several days",
@@ -36,7 +45,11 @@ let questions = [
   {
     id: 4,
     question: "How often have you been bothered that you have poor appetite, weight loss, or overeating over the last two weeks?",
-    answer: "Not at all",
+    pointLow: "Not at all",
+    pointMid:"More than half of the days",
+    pointHigh:"Several days",
+    pointVeryHigh:"Nearly every day",
+
     options: [
       "Not at all",
       "Several days",
@@ -67,12 +80,20 @@ function next() {
 
   let user_answer = document.querySelector("li.option.active").innerHTML;
   // check if the answer is right or wrong
-  if (user_answer == questions[question_count].answer) {
+  if (user_answer == questions[question_count].pointLow) {
     points += 0;
     sessionStorage.setItem("points", points);
   }
-  else {
-    points += 10;
+  else if (user_answer == questions[question_count].pointMid){
+    points += 3;
+    sessionStorage.setItem("points", points);
+  }
+  else if (user_answer == questions[question_count].pointHigh){
+    points += 6;
+    sessionStorage.setItem("points", points);
+  }
+  else if (user_answer == questions[question_count].pointVeryHigh){
+    points += 9;
     sessionStorage.setItem("points", points);
   }
   console.log(points);
