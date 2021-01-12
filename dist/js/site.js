@@ -57,6 +57,96 @@ let questions = [
       "Nearly every day"
     ]
   },
+  {
+    id: 5,
+    question: "How often have you been bothered by feeling tired, or having little energy over the last two weeks?",
+    pointLow: "Not at all",
+    pointMid:"More than half of the days",
+    pointHigh:"Several days",
+    pointVeryHigh:"Nearly every day",
+
+    options: [
+      "Not at all",
+      "Several days",
+      "More than half of the days",
+      "Nearly every day"
+    ]
+  },
+  {
+    id: 6,
+    question: "How often have you been bothered by feeling bad about yourself – or feeling that you are a failure, or that you have let yourself or your family down over the last two weeks?",
+    pointLow: "Not at all",
+    pointMid:"More than half of the days",
+    pointHigh:"Several days",
+    pointVeryHigh:"Nearly every day",
+
+    options: [
+      "Not at all",
+      "Several days",
+      "More than half of the days",
+      "Nearly every day"
+    ]
+  },
+  {
+    id: 7,
+    question: "How often have you been bothered that you have trouble concentrating on things like school work, reading, or watching TV over the last two weeks?",
+    pointLow: "Not at all",
+    pointMid:"More than half of the days",
+    pointHigh:"Several days",
+    pointVeryHigh:"Nearly every day",
+
+    options: [
+      "Not at all",
+      "Several days",
+      "More than half of the days",
+      "Nearly every day"
+    ]
+  },
+  {
+    id: 8,
+    question: "How often have you been bothered by moving or speaking so slowly that other people could have noticed? Or the opposite – being so fidgety or restless that you were moving around a lot more than usual over the last two weeks?",
+    pointLow: "Not at all",
+    pointMid:"More than half of the days",
+    pointHigh:"Several days",
+    pointVeryHigh:"Nearly every day",
+
+    options: [
+      "Not at all",
+      "Several days",
+      "More than half of the days",
+      "Nearly every day"
+    ]
+  },
+  {
+    id: 9,
+    question: "How often have you been bothered by thoughts that you would be better off dead, or of hurting yourself in some way over the last two weeks?",
+    pointLow: "Not at all",
+    pointMid:"More than half of the days",
+    pointHigh:"Several days",
+    pointVeryHigh:"Nearly every day",
+
+    options: [
+      "Not at all",
+      "Several days",
+      "More than half of the days",
+      "Nearly every day"
+    ]
+  },
+  {
+    id: 10,
+    question: "How often have you been bothered by thoughts of you being negative in others perspective over the last two weeks?",
+    pointLow: "Not at all",
+    pointMid:"More than half of the days",
+    pointHigh:"Several days",
+    pointVeryHigh:"Nearly every day",
+
+    options: [
+      "Not at all",
+      "Several days",
+      "More than half of the days",
+      "Nearly every day"
+    ]
+  },
   // {
   //   id: 4,
   //   question: "How often have you been bothered that you have poor appetite, weight loss, or overeating over the last two weeks?",
