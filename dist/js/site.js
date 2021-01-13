@@ -147,21 +147,6 @@ let questions = [
       "Nearly every day"
     ]
   },
-  // {
-  //   id: 4,
-  //   question: "How often have you been bothered that you have poor appetite, weight loss, or overeating over the last two weeks?",
-  //   pointLow: "Not at all",
-  //   pointMid:"More than half of the days",
-  //   pointHigh:"Several days",
-  //   pointVeryHigh:"Nearly every day",
-
-  //   options: [
-  //     "Not at all",
-  //     "Several days",
-  //     "More than half of the days",
-  //     "Nearly every day"
-  //   ]
-  // },
 ];
 
 let question_count = 0;
